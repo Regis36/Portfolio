@@ -1,0 +1,86 @@
+.portfolio{
+    display: flex; 
+    flex-direction: column;
+    align-items:center;
+    /* justify-content: center; */
+    gap: 80px;
+    margin: 80px 170px; 
+}
+
+.portfolio-title{
+    position: relative; 
+    align-items: center;
+}
+
+.portfolio-title h1{
+    padding: 0px 30px;
+    font-size: 80px; 
+    font-weight: 600;
+    align-items: center;
+}
+
+.my-work-container{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:40px;
+}
+
+.portfolio-format{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    gap: 20px; 
+    padding: 60px;
+    border-radius: 10px; 
+    border: 2px solid white; 
+    transition: 0.4s; 
+    cursor: pointer;
+    height: 400px;
+    width: 419;
+
+}
+
+.portfolio-format:hover{
+    border: 6px solid #ff00ff; 
+    background-image: linear-gradient(45deg, #5db8c9, #6106e1);
+    transform: scale(1.05); 
+    transition: 0.4s;
+}
+
+.my-work-container img{
+    width: 300px;
+    height:250px;
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    transition: 0.3s;
+    cursor:pointer;
+    border-radius: 10%;
+}
+
+.my-work-container img:hover{
+    /* transform: scale(1.12);
+    transition:0.4s;
+    border: 6px solid #ff00ff;
+    background-image: linear-gradient(45deg, #5db8c9, #6106e1); */
+}
+
+.show-more{
+    display: flex;
+    gap:15px;
+    border-radius: 50px;
+    border: 2px solid white; 
+    padding: 30px 60px;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    transition: 0.6s;
+    cursor: pointer; 
+}
+
+.show-more:hover{
+    gap:30px;
+    transition: 0.6s;
+    transform: scale(1.05);
+}

@@ -1,0 +1,45 @@
+.image-container{
+    align-items: center;
+    position: relative;
+    background-color: red;
+    display:flex;
+}
+
+.image-slider {
+    position: relative;
+    width: 100%;
+  }
+  
+  .slider-image {
+    width: 50%; /* Ensure the image takes up the full width of its container */
+    height: 50%; /* Maintain the aspect ratio of the image */
+    display: flex; /* Ensure the image doesn't have any extra space below it */
+    align-items: center;
+  }
+  
+  button {
+    /* position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #777;
+    border: solid;
+    border-color: white;
+    cursor: pointer;
+    border-radius: 50%; */
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    position:absolute; 
+    cursor:pointer; 
+    border-radius: 50%;
+
+  }
+  
+  button:first-child {
+    left: 0;
+  }
+  
+  button:last-child {
+    right: 0;
+  }
